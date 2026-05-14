@@ -1,0 +1,54 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Tømmeplan",
+        "description": "Finn eiendommen din for å følge med på tømmedatoene.",
+        "data": {
+          "kommune": "Kommune",
+          "adresse": "Gateadresse"
+        },
+        "data_description": {
+          "adresse": "Eksempel: Eksempelveien 1"
+        }
+      },
+      "pick": {
+        "title": "Velg eiendommen din",
+        "description": "Flere eiendommer matcher. Velg den rette.",
+        "data": {
+          "eiendom_id": "Eiendom"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Får ikke kontakt med Tømmeplan-tjenesten. Sjekk tilkoblingen og prøv igjen.",
+      "no_results": "Fant ingen eiendommer for den adressen. Prøv en kortere søketekst.",
+      "unknown": "Uventet feil. Se Home Assistant-loggen for detaljer."
+    },
+    "abort": {
+      "already_configured": "Denne eiendommen er allerede konfigurert."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "restavfall": { "name": "Restavfall" },
+      "matavfall": { "name": "Matavfall" },
+      "bioavfall": { "name": "Bioavfall" },
+      "papir": { "name": "Papir" },
+      "papp": { "name": "Papp" },
+      "pappogkartong": { "name": "Papp og kartong" },
+      "drikkekartong": { "name": "Drikkekartong" },
+      "plast": { "name": "Plast" },
+      "plastemballasje": { "name": "Plastemballasje" },
+      "glassemballasje": { "name": "Glassemballasje" },
+      "glassogmetall": { "name": "Glass og metall" },
+      "metall": { "name": "Metall" },
+      "hageavfall": { "name": "Hageavfall" },
+      "parkoghageavfall": { "name": "Park- og hageavfall" },
+      "farligavfall": { "name": "Farlig avfall" },
+      "elektroniskavfall": { "name": "Elektronisk avfall" },
+      "trevirke": { "name": "Trevirke" },
+      "juletre": { "name": "Juletre" }
+    }
+  }
+}
